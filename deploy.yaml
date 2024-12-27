@@ -5,15 +5,15 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: todoapp
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: nginx
+        app: todoapp
     spec:
       containers:
-      - name: nginx
-        image: sushma7/todo-list-app
+      - name: pythontodo
+        image: sushma7/todo-list-app:latest
         ports:
         - containerPort: 8000
