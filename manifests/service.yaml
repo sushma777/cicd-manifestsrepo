@@ -7,7 +7,7 @@ spec:
     app: todoapp
   ports:
     - protocol: TCP
-      port: 80        # Service Port: The port that will be exposed externally
+      port: 8000       # Service Port: The port that will be exposed externally
       targetPort: 8000 # Container Port: The port where your app is running
       nodePort: 30000  # Node Port: Expose on port 30000 (on each node)
   type: NodePort      # Change the service type to NodePort
